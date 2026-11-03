@@ -1,5 +1,4 @@
 public class EmployeePayroll {
-    // Salary using employee ID.
     double salary(String employeeID) {
         if (employeeID.equals("E101")) {
             return 30000;
@@ -10,32 +9,29 @@ public class EmployeePayroll {
         return 0;
     }
 
-    // Hours worked and hourly rate.
     double salary(int hours, double rate) {
         return hours * rate;
     }
 
-    // Employee ID with bonus.
     double salary(String employeeID, double bonus) {
         return salary(employeeID) + bonus;
     }
 
-    // Monthly salary from annual salary.
+
     double salary(double annualSalary) {
         return annualSalary / 12;
     }
 
-    // Basic salary with overtime.
     double salary(double basic, int overtimeHours, double overtimeRate) {
         return basic + overtimeHours * overtimeRate;
     }
 
-    // Basic salary with deductions.
+
     double salary(double basic, double deductions) {
         return basic - deductions;
     }
 
-    // Basic salary with bonus and deductions.
+
     double salary(double basic, double bonus, double deductions) {
         return basic + bonus - deductions;
     }
